@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shirdi Darshan Registration</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.templepurohit.com/wp-content/uploads/2015/05/Shirdi-Sai-Baba-Temple-Maharashtra-1_TemplePurohit.jpg');
+            background-size: cover;;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .registration-container {
+            width: 80%;
+            max-width: 500px;
+            margin: 45px auto;
+            background-color: rgb(240, 212, 152);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-container">
+        <h2>Shirdi Darshan Registration</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" required>
+
+            <label for="address1">Address Line 1:</label>
+            <input type="text" id="address1" name="address1" required>
+
+            <label for="address2">Address Line 2:</label>
+            <input type="text" id="address2" name="address2">
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required>
+
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" name="pincode" required>
+
+            <label for="time">Preferred Darshan Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="date">Preferred Darshan Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="femaleCount">Number of Females:</label>
+            <input type="number" id="femaleCount" name="femaleCount" required>
+
+            <label for="maleCount">Number of Males:</label>
+            <input type="number" id="maleCount" name="maleCount" required>
+
+            <label for="childCount">Number of Children:</label>
+            <input type="number" id="childCount" name="childCount" required>
+ 
+            <label for="amount">Amount:</label>
+            <input type="text" id="amount" name="amount" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

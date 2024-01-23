@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: lightgray;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+            font-size: larger;
+            position: relative;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            max-width: 80px; /* Adjust the width as needed */
+            height: auto;
+        }
+
+        .login-container h2 {
+            color: green;
+            margin-bottom: 20px;
+        }
+
+        .login-form {
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 8px;
+            text-align: left;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: darkgreen;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .btn-container button {
+            flex-grow: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+            background-color: rgb(239, 192, 89); /* Same color for both buttons */
+            color: black; /* Text color for both buttons */
+        }
+
+        .btn-container button.registration {
+            margin-right: 10px;
+        }
+
+        .btn-container button.cv {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/e5cbaf76038139.5c5d968fc544a.jpg" alt="Shirdi Logo" class="logo">
+        <h2>Login</h2>
+        <form class="login-form" action="your_backend_login_handler.php" method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your user name" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+
+        <div class="btn-container">
+            <a href="registration page.html"><button class="registration">Registration</button></a>
+            <a href="cv.html"><button class="cv">CV</button></a>
+        </div>
+    </div>
+
+</body>
+
+</html>
